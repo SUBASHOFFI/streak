@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>MY_Streak.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+<div style="text-align:center;margin-top:10px;">
+<img style="height:100px;width:33%;" src="LOGO.png"></img>
+</div>
+<h1 style="font-size:25px;text-align:center;color:black;">STREAK</h1>
+<hr>
+<h1>Home_Page !</h1>
+<div>
+<div style="text-align:center">
+<a style="background-color:black;padding-right:20px;color:white; " href="index.html"><b>Home_Page |</b> </a>
+<a style="background-color:black;padding-right:20px;color:white; " href="About.html"><b>About |</b> </a>
+<a style="background-color:black;padding-right:20px;color:white;" href="Endpage.html"><b>Today_Updates </b>  </a>
+<h3>Contents :</h3>
+</div>
+<div style="text-align:right;" class="calender">
+  <div class="left">
+    <p id="date">01</p>
+    <p id="day">Sunday</p>
+ 
+   
+  </div>
+  <div class="right">
+    <p id="month">january</p>
+    <p id="year">2020</p>
+    
+  </div>
+</div>
+<script>
+const date=document.getElementById("date");
+const day=document.getElementById("day");
+const month=document.getElementById("month");
+const year=document.getElementById("year");
+
+const today = new Date();
+const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const allMonths=["January","Febraury","March","April","May","June","July","August",
+"Septemnber","October","November","December"];
+date.innerHTML=today.getDate();
+day.innerHTML=weekDays[today.getDay()];
+
+month.innerHTML=allMonths[today.getMonth()];
+year.innerHTML=today.getFullYear();
+console.log(today);
+</script>
+<marquee style="color:yellow">This server is under Progress CHECKING & MAINTAINENCE ... Will be available to public use on 15.10.2023</marquee>
+<p><h4 style="color:rgb(255, 255, 255)"><i>Streak is a productivity app that helps users establish and maintain habits.
+     It tracks daily activities and encourages consistency by recording streaks of consecutive 
+     completions. Users set personal goals <a href="">CONTENT_1</a> and receive reminders to stay on track.
+      Whether it's exercise, reading, or other routines, Streak <a href="">CONTENT_2 </a>provides a 
+      visual representation of progress, motivating individuals to build positive habits<a href=""> 
+        CONTENT_3</a>. The app is available on both iOS and Android platforms</i></h4></p>
+<br>
+<br>
+<h3 style="text-align:center;"><a style="background-color:skyblue;padding:15px 35px 15px 35px;color:blue;" href="About.html">NEXT</a></h3>
+<img style="width:33%;height:70%" src="indexPagePIC.jpg" ></img>
+<img style="width:33%" src="indexPagePIC3.jpg" ></img>
+<img style="width:33%" src="indexPagePIC2.jpg" ></img>
+<div style="text-align:center;height:33px;">
+</div>
+<div style="text-align:center">
+<a href="https://instagram.com/subash_official_insta?utm_source=qr&igshid=MThlNWY1MzQwNA=="><img style="width:100px;height:100px;"src="INSTA.jpg" ></a>
+</div>
+
+</body>
+
+</html>
